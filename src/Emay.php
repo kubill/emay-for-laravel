@@ -23,7 +23,6 @@ class Emay
      */
     public function send($mobile, $content, $timerTime = "", $customSmsId = "", $extendedCode = "", $validPeriodtime = 120)
     {
-        return $mobile;
         $timestamp = date('YmdHis');
         $sign = md5(config('emay.app_id') . config('emay.aes_pwd') . $timestamp);
         $data['appId'] = config('emay.app_id');

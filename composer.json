@@ -16,6 +16,11 @@
       "Kubill\\Emay\\": "src/"
     }
   },
+  "autoload-dev":{
+    "psr-4": {
+      "Kubill\\Emay\\Tests\\": "tests/"
+    }
+  },
   "extra": {
     "laravel": {
       "providers": [
