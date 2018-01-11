@@ -13,17 +13,6 @@ use Illuminate\Support\Facades\Log;
 
 class Emay
 {
-    public function __construct()
-    {
-        $this->YM_SMS_ADDR = config('emay.base_uri');
-        $this->YM_SMS_SEND_URI = config('emay.send_uri');
-        $this->YM_SMS_SEND_BATCH_URI = config('emay.send_batch_uri');
-        $this->YM_SMS_GETBALANCE_URI = config('emay.getbalance_uri');
-        $this->YM_SMS_APPID = config('emay.app_id');
-        $this->YM_SMS_AESPWD = config('emay.aes_pwd');
-        $this->EN_GZIP = config('emay.gzip');
-    }
-
     /**
      * @param string $mobile 手机号
      * @param string $content 内容
