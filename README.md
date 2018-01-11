@@ -29,13 +29,13 @@ And add the Agent alias to `config/app.php`:
 Basic Usage
 -----------
 
-Start by creating an `Agent` instance (or use the `Agent` Facade if you are using Laravel):
+Start by creating an `Emay` instance (or use the `Emay` Facade if you are using Laravel):
 
 ```php
 use Kubill\Emay\Emay;
 
 $emay = new Emay();
-$emay->send(,);
+$emay->send(138xxxxxxxx,'hello world');
 ```
 
 ## License
