@@ -1,0 +1,29 @@
+{
+  "name": "kubill/emay-for-laravel",
+  "type": "library",
+  "description": "emay SMS for laravel5.*",
+  "homepage": "https://github.com/kubill/emay-for-laravel",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Kubill",
+      "email": "meiweijia@gmail.com"
+    }
+  ],
+  "require": {},
+  "autoload": {
+    "psr-4": {
+      "Kubill\\Emay\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Kubill\\Emay\\EmayServiceProvider"
+      ],
+      "aliases": {
+        "Emay": "Kubill\\Emay\\Facades\\Emay"
+      }
+    }
+  }
+}
