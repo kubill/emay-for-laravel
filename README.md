@@ -37,6 +37,11 @@ use Kubill\Emay\Emay;
 $emay = new Emay();
 $emay->send(138xxxxxxxx,'hello world');
 ```
+OR
+```php
+use Kubill\Emay\Emay;
+Emay::send(138xxxxxxxx,'hello world');
+```
 
 ## License
 
